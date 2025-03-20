@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Configurações</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="config_container">
+        <div class="config_cima">
+            <h1 class="config_titulo">Configurações</h1>
+            <img src="fechar.svg" class="icone_fechar" draggable="false">
+        </div>
+        <p class="config_desc">Em desenvolvimento!</p>
+    </div>
+
+    <script>
+        document.querySelector(".icone_fechar").addEventListener("click", () => {
+            window.electron.closeSettings();
+        });
+    </script>
+
+</body>
+</html>

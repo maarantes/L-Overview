@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100%;
+    user-select: none;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+.container {
+    text-align: center;
+    font-family: Inter;
+    color: white;
+    background: #272524;
+    border-radius: 4px !important;
+    padding: 0px 12px;
+    display: flex;
+    align-items: center;
+    -webkit-app-region: no-drag;
+    position: relative;
+    transition: padding-right 0.3s ease-in-out;
+}
+
+.song_info {
+    display: flex;
+    flex-direction: column;
+    height: 32px;
+    align-items: flex-start;
+    gap: 0px;
+    margin-right: 16px;
+    padding-right: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    border-right: 1px solid #606060;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+#song_name {
+    font-size: 12px;
+}
+
+#song_artist {
+    font-size: 10px;
+    color: #C4C4C4;
+    margin-top: -8px;
+}
+
+#lyrics {
+    font-size: 14px !important;
+}
+
+.icone_config {
+    opacity: 0;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    margin-right: 16px;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    transform: translateX(-20px);
+}
+
+.icone_config:hover, .icone_fechar:hover {
+    filter: brightness(0.8);
+}
+
+.container:hover .icone_config {
+    opacity: 1;
+    display: block;;
+    transform: translateY(0px);
+}
+
+.container:hover .song_info {
+    margin-left: 40px;
+}
+
+.icone_arrastar {
+    position: absolute;
+    right: 0;
+    margin-right: 16px;
+    -webkit-app-region: drag;
+    user-select: none;
+}
+
+/* CSS Janela Configurações */
+
+.config_container {
+    font-family: Inter;
+    color: white;
+    background: #272524;
+    border-radius: 4px !important;
+    padding: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    -webkit-app-region: drag;
+}
+
+.config_titulo {
+    font-size: 16px;
+}
+
+.config_cima {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.config_desc {
+    font-size: 14px;
+}
+
+.icone_fechar {
+    width: 24px;
+    height: 24px;
+    padding: 6px;
+    border-radius: 4px;
+    cursor: pointer;
+    -webkit-app-region: no-drag;
+}
+
+.icone_fechar:hover {
+    background-color: #2c2928;
+}

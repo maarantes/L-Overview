@@ -1,0 +1,9 @@
+.cache
+node_modules/
+
+# Ambiente virtual
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/

@@ -1,0 +1,14 @@
+{
+  "name": "lyrics-overlay",
+  "version": "1.0.0",
+  "description": "Um overlay de letras do Spotify",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "set NODE_ENV=development && electron --disable-gpu ."
+  },
+  "devDependencies": {
+    "electron": "^27.0.0",
+    "electron-reload": "^2.0.0-alpha.1"
+  }
+}
