@@ -33,7 +33,7 @@ def get_current_song():
             progress = current.get("progress_ms", 0) // 1000
             is_playing = current.get("is_playing", False)
             
-            print(f"Tocando agora: {song} - {artist} | {progress}s | {"▶️" if is_playing else "⏸️"}")
+            print(f"Tocando agora: {song} - {artist} | {progress}")
 
             return song, artist, progress, is_playing
 
